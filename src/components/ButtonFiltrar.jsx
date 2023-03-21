@@ -1,11 +1,12 @@
 import React from 'react';
 import { AiTwotoneFilter } from 'react-icons/ai';
+import './buttonfilter.scss';
 
 const ButtonFiltrar = () => {
 	return (
-		<div className="fixed bottom-2 right-0 left-0">
-			<div className="flex items-center justify-center">
-				<button className="px-4 mx-auto py-2 text-sm bg-blue-700 font-semibold text-white rounded-lg flex items-center justify-center gap-1.5">
+		<div className="container-filter">
+			<div className="container-filter-center">
+				<button className="button-filter">
 					Filtrar <AiTwotoneFilter />
 				</button>
 			</div>

@@ -4,15 +4,16 @@ import { ImPhoneHangUp } from 'react-icons/im';
 import CardProduct from './components/CardProduct';
 import Header from './components/Header';
 import ButtonFiltrar from './components/ButtonFiltrar';
+import './styles.scss';
 
 function App() {
 	return (
-		<main className="bg-white h-full min-h-[100vh]">
+		<main className="container-main">
 			<Header />
 			<div className="container pt-8 px-6">
-				<h6 className="text-center text-4xl font-bold pb-6">Cerveza</h6>
+				<h6 className="titulo-main">Cerveza</h6>
 
-				<section className="grid grid-cols-2 gap-3 mb-8">
+				<section className="container-products">
 					<CardProduct
 						img={'/img/votus.png'}
 						title={'Votus N 001'}
@@ -49,7 +50,7 @@ function App() {
 					/>
 				</section>
 
-				<section className="border border-gray-200 rounded py-2 px-4 mb-8 flex items-center justify-between">
+				<section className="section-mercando">
 					<div>
 						<h6>Sigue mercando</h6>
 						<h2 className="font-bold text-2xl">Vinos</h2>
@@ -60,7 +61,7 @@ function App() {
 				</section>
 			</div>
 
-			<section className="bg-gray-900 px-4 py-6">
+			<section className="cani-help">
 				<h6 className="text-center text-white font-bold">
 					¿Podemos ayudarle?
 				</h6>

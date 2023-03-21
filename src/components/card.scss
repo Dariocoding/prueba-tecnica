@@ -1,0 +1,22 @@
+.card-product-container {
+	border: 1px solid #e5e7eb;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.card-product-body {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.btn-agregar {
+	width: 100%;
+	background-color: #e5e7eb;
+	color: #1d4ed8;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-weight: 700;
+}

@@ -1,10 +1,11 @@
 import React from 'react';
+import './card.scss';
 
 const CardProduct = props => {
 	const { title, description, price, img } = props;
 	return (
-		<div className="border border-gray-200 flex justify-between flex-col">
-			<div className="flex-grow flex justify-between flex-col">
+		<div className="card-product-container">
+			<div className="card-product-body">
 				<div>
 					<div className="p-2">
 						<img src={img} alt={title} className={'mx-auto'} />
@@ -28,9 +29,7 @@ const CardProduct = props => {
 			</div>
 
 			<div className="">
-				<button className="w-full bg-gray-200 text-blue-700 py-2 font-bold">
-					Agregar
-				</button>
+				<button className="btn-agregar">Agregar</button>
 			</div>
 		</div>
 	);

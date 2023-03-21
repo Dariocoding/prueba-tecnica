@@ -1,0 +1,54 @@
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	@media (min-width: 640px) {
+		max-width: 640px;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+}
+
+.container-main {
+	background-color: white;
+	height: 100%;
+	min-height: 100vh;
+}
+
+.titulo-main {
+	text-align: center;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	padding-bottom: 1.5rem;
+}
+
+.container-products {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.75rem;
+	margin-bottom: 2rem;
+}
+
+.section-mercando {
+	border: 1px solid #e5e7eb;
+	border-radius: 0.25rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	margin-bottom: 2rem;
+	padding-right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cani-help {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: #111827;
+}
